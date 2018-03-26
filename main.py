@@ -6,10 +6,6 @@
 from app import app
 from sys import argv
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
 port = 8000
 debug = True
 
