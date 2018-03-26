@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head.html"%}
+  </head>
+  <body>
+    {% block header %}
+    {% endblock header %}
+
+    {% block body %}
+      {% if not data.content %}
+        <p>welcome</p>
+      {% else %}
+        {{ data.content }}
+      {% endif %}
+    {% endblock body %}
+
+    {% block footer %}
+      {% include "footer.html"%}
+    {% endblock footer %}
+  </body>
+</html>

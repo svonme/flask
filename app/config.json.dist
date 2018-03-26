@@ -1,0 +1,33 @@
+{
+  "global": {
+    "title": "flask",
+    "author": [
+      "author"
+    ],
+    "keywords": "flask",
+    "description": "flask",
+    "favicon": ""
+  },
+  "mongodb": {
+    "PROTOCOL": "mongodb",
+    "HOST": "127.0.0.1",
+    "PORT": "27017",
+    "USER": "root",
+    "PASSWORD": ""
+  },
+  "redis": {
+    "PROTOCOL": "redis",
+    "HOST": "127.0.0.1",
+    "PORT": "6379",
+    "PASSWORD": ""
+  },
+  "mysql": {
+    "NAME": "mysql",
+    "USER": "mysql",
+    "PASSWORD": "admin",
+    "HOST": "127.0.0.1",
+    "PORT": "3306",
+    "CHARSET": "utf8"
+  },
+  "secret_key": "secret_key"
+}
