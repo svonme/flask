@@ -1,10 +1,11 @@
 # -- coding: utf-8 --
 
 import os
-from index import create_app   # 导入 app
+from . import index as create
 from flask import render_template, Response
 
-app = create_app()
+app = create.create_app()
+
 @app.route('/')
 @app.route('/index')
 @app.route('/index.html')

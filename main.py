@@ -2,9 +2,10 @@
 # -- coding: utf-8 --
 
 
-# from app.app import app
+
 from app import app
 from sys import argv
+
 
 port = 8000
 debug = True

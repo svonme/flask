@@ -8,9 +8,11 @@ def create_app():
 
     app = Flask(__name__)
     src = os.path.abspath(os.path.join('app', './config.json'))
-    file = open(src, 'rb')
-    text = file.read()
-    config = json.loads(text)
+
+    config = {}
+    with open(src, 'r') as f:
+        config = json.load(f)
+
 
     labels = ['global', 'mongodb', 'redis', 'mysql', 'secret_key']
     for index in range(len(labels)):
