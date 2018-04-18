@@ -17,7 +17,6 @@ if len(argv) > 2 and argv[2]:
         debug = False
     pass
 
-
 if __name__ == '__main__':
     __import__('routers')
     app.run(host = '0.0.0.0', port = int(port), debug = debug)

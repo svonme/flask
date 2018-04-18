@@ -3,9 +3,10 @@
 import os, json
 from flask import Flask
 # 构造 flask 对象
-app = Flask(__name__)
 
-if True:
+def create_app():
+
+    app = Flask(__name__)
     src = os.path.abspath(os.path.join('app', './config.json'))
     file = open(src, 'rb')
     text = file.read()
@@ -20,3 +21,5 @@ if True:
     app.jinja_env.trim_blocks = True
     app.jinja_env.lstrip_blocks = True
     app.add_template_global(app.config.get('global'), 'config')
+
+    return app
